@@ -41,6 +41,10 @@ public class CarControls : MonoBehaviour
     {
         curPointX = Input.mousePosition.x;
         curPointY = Input.mousePosition.y;
+        //Для телефона
+        // curPointX = Input.GetTouch(0).position.x;
+        // curPointY = Input.GetTouch(0).position.y;
+        //переписать OnMouseUp()
     }
 
     private void OnMouseUp()
@@ -66,22 +70,32 @@ public class CarControls : MonoBehaviour
 
     private void Update()
     {
+        MovCar();
+    }
+
+    private void FixedUpdate()
+    {
+        AxisControls();
+    }
+
+    private void MovCar()
+    {
         if (FinalPositions.x != 0)
         {
             transform.position = Vector3.MoveTowards(transform.position, FinalPositions, fainalSpeed * Time.deltaTime);
-           
+
             Vector3 lookAtPos = FinalPositions - transform.position;
             lookAtPos.y = 0;
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookAtPos), Time.deltaTime * rotationSpeed);
         }
 
-        if(transform.position == FinalPositions)
+        if (transform.position == FinalPositions)
         {
             Destroy(gameObject);
         }
     }
 
-    private void FixedUpdate()
+    private void AxisControls()
     {
         if (isClik && FinalPositions.x == 0)
         {
@@ -93,7 +107,7 @@ public class CarControls : MonoBehaviour
             {
                 speed *= -1;
             }
-            else if(CarDirektionY == Direktion.Bottom && CarAxis == Axis.Vertical)
+            else if (CarDirektionY == Direktion.Bottom && CarAxis == Axis.Vertical)
             {
                 speed *= -1;
             }
@@ -101,4 +115,25 @@ public class CarControls : MonoBehaviour
             rb.MovePosition(rb.position + whichWay * speed * Time.fixedDeltaTime);
         }
     }
+
+    private void OnTriggerStay(Collider col)
+    {
+        if(col.CompareTag("Car") || col.CompareTag("Borer"))
+        {
+            if(CarAxis == Axis.Horizontal && isClik)
+            {
+                float adding = CarDirektionX == Direktion.Left ? 0.5f : - 0.5f;
+                transform.position = new Vector3(transform.position.x, 0, transform.position.z + adding);
+            }
+
+            if (CarAxis == Axis.Vertical && isClik)
+            {
+                float adding = CarDirektionY == Direktion.Top ? 0.5f : -0.5f;
+                transform.position = new Vector3(transform.position.x + adding, 0, transform.position.z);
+            }
+           
+            isClik = false;
+        }
+    }
+
 }

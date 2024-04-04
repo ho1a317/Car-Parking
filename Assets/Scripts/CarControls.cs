@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarControls : MonoBehaviour
 {
     public float speed = 5f;
     public float fainalSpeed = 15f;
     public float rotationSpeed = 350f;
+    
+
     private bool isClik;
 
     private float curPointX;
@@ -28,17 +31,26 @@ public class CarControls : MonoBehaviour
 
     public Axis CarAxis;
 
+    public Text CauntMoove;
+    public GameObject StartGameBan;
+
     [NonSerialized] public Vector3 FinalPositions;
 
     private Rigidbody rb;
 
+    private static int CauntCars = 0;
+
     private void Awake()
     {
+        CauntCars++;
+
         rb = GetComponent<Rigidbody>();
     }
 
     private void OnMouseDown()
     {
+        if (!StartGame.isGameStart) return;
+
         curPointX = Input.mousePosition.x;
         curPointY = Input.mousePosition.y;
         //Для телефона
@@ -46,10 +58,12 @@ public class CarControls : MonoBehaviour
         // curPointY = Input.GetTouch(0).position.y;
         //переписать OnMouseUp()
     }
-
+    //Для телефона
     private void OnMouseUp()
     {
-        if(Input.mousePosition.x - curPointX > 0)
+        if (!StartGame.isGameStart) return;
+
+        if (Input.mousePosition.x - curPointX > 0)
         {
             CarDirektionX = Direktion.Righr;
         }
@@ -65,11 +79,21 @@ public class CarControls : MonoBehaviour
         {
             CarDirektionY = Direktion.Bottom;
         }
+
         isClik = true;
+
+        CauntMoove.text = Convert.ToString(Convert.ToInt32(CauntMoove.text) - 1);
+
+       
     }
 
     private void Update()
     {
+        if (CauntMoove.text == "0" && CauntCars > 0 && !isClik)
+        {
+            StartGameBan.GetComponent<StartGame>().LoosGame();
+        }
+
         MovCar();
     }
 
@@ -91,6 +115,7 @@ public class CarControls : MonoBehaviour
 
         if (transform.position == FinalPositions)
         {
+            CauntCars--;
             Destroy(gameObject);
         }
     }

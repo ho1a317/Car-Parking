@@ -9,7 +9,7 @@ public class CarControls : MonoBehaviour
     public float speed = 5f;
     public float fainalSpeed = 15f;
     public float rotationSpeed = 350f;
-    
+
 
     private bool isClik;
 
@@ -18,7 +18,7 @@ public class CarControls : MonoBehaviour
 
     private enum Direktion
     {
-        Righr,Left,Top,Bottom,None
+        Righr, Left, Top, Bottom, None
     }
 
     private Direktion CarDirektionX = Direktion.None;
@@ -40,11 +40,17 @@ public class CarControls : MonoBehaviour
 
     private static int CauntCars = 0;
 
+    private AudioSource audio;
+    public AudioClip AudioStart, AudioCrash;
+
+    public ParticleSystem CrashEffect;
+
     private void Awake()
     {
         CauntCars++;
 
         rb = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     private void OnMouseDown()
@@ -84,7 +90,10 @@ public class CarControls : MonoBehaviour
 
         CauntMoove.text = Convert.ToString(Convert.ToInt32(CauntMoove.text) - 1);
 
-       
+        audio.Stop();
+        audio.clip = AudioStart;
+        audio.Play();
+
     }
 
     private void Update()
@@ -143,11 +152,23 @@ public class CarControls : MonoBehaviour
 
     private void OnTriggerStay(Collider col)
     {
-        if(col.CompareTag("Car") || col.CompareTag("Borer"))
+        if (col.CompareTag("Car") || col.CompareTag("Borer"))
         {
-            if(CarAxis == Axis.Horizontal && isClik)
+            Destroy(
+                Instantiate(CrashEffect, col.ClosestPoint(transform.position), Quaternion.Euler(new Vector3(270, 0, 0)))
+                ,2f);
+
+
+            if (audio.clip != AudioCrash && !audio.isPlaying)
             {
-                float adding = CarDirektionX == Direktion.Left ? 0.5f : - 0.5f;
+                audio.Stop();
+                audio.clip = AudioCrash;
+                audio.Play();
+            }
+
+            if (CarAxis == Axis.Horizontal && isClik)
+            {
+                float adding = CarDirektionX == Direktion.Left ? 0.5f : -0.5f;
                 transform.position = new Vector3(transform.position.x, 0, transform.position.z + adding);
             }
 
@@ -156,7 +177,7 @@ public class CarControls : MonoBehaviour
                 float adding = CarDirektionY == Direktion.Top ? 0.5f : -0.5f;
                 transform.position = new Vector3(transform.position.x + adding, 0, transform.position.z);
             }
-           
+
             isClik = false;
         }
     }

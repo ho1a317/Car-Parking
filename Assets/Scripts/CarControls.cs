@@ -31,7 +31,7 @@ public class CarControls : MonoBehaviour
 
     public Axis CarAxis;
 
-    public Text CauntMoove;
+    public Text CauntMoove , CauntMoney;
     public GameObject StartGameBan;
 
     [NonSerialized] public Vector3 FinalPositions;
@@ -40,7 +40,7 @@ public class CarControls : MonoBehaviour
 
     private static int CauntCars = 0;
 
-    private AudioSource audio;
+    private new AudioSource audio;
     public AudioClip AudioStart, AudioCrash;
 
     public ParticleSystem CrashEffect;
@@ -124,7 +124,15 @@ public class CarControls : MonoBehaviour
 
         if (transform.position == FinalPositions)
         {
+            PlayerPrefs.SetInt("CarCoints",PlayerPrefs.GetInt("CarCoints") + 1);
+            CauntMoney.text = Convert.ToString(Convert.ToInt32(CauntMoney.text) + 1);
             CauntCars--;
+
+            if(CauntCars == 0)
+            {
+                StartGameBan.GetComponent <StartGame>().WinGame();
+            }
+
             Destroy(gameObject);
         }
     }

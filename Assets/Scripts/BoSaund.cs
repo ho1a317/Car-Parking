@@ -16,7 +16,8 @@ public class BoSaund : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(5f,10f));
+            yield return new WaitForSeconds(Random.Range(5f,15f));
+            Audio.volume = 0.10f;
             Audio.Play();
         }
     }

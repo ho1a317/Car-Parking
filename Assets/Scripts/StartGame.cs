@@ -35,6 +35,8 @@ public class StartGame : MonoBehaviour
         WinText.SetActive(true);
         ShopImage.SetActive(true);
         CauntMooves.SetActive(false);
+
+        PlayerPrefs.SetInt("Game Level", PlayerPrefs.GetInt("Game Level") + 1);
     }
 
     public void LoosGame()

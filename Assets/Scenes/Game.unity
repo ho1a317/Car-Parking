@@ -17931,7 +17931,7 @@ GameObject:
   - component: {fileID: 1386485845}
   - component: {fileID: 1386485844}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

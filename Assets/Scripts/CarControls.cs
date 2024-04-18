@@ -60,8 +60,8 @@ public class CarControls : MonoBehaviour
         curPointX = Input.mousePosition.x;
         curPointY = Input.mousePosition.y;
         //Для телефона
-        // curPointX = Input.GetTouch(0).position.x;
-        // curPointY = Input.GetTouch(0).position.y;
+        //curPointX = Input.GetTouch(0).position.x;
+        //curPointY = Input.GetTouch(0).position.y;
         //переписать OnMouseUp()
     }
     //Для телефона

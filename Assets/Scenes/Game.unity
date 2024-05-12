@@ -1203,6 +1203,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2558,6 +2570,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.23
@@ -2652,10 +2676,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3319,7 +3343,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177328020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0040904}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00095354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3327,8 +3351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -218.80005}
-  m_SizeDelta: {x: 137, y: 99.7}
+  m_AnchoredPosition: {x: 0.00024414062, y: -198}
+  m_SizeDelta: {x: 152.9, y: 115.8}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &177328024
 MonoBehaviour:
@@ -4399,8 +4423,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
       propertyPath: CarAxis
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4815,7 +4851,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -13.000977}
-  m_SizeDelta: {x: 107.4, y: 130.2}
+  m_SizeDelta: {x: 137, y: 130.2}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &286004508
 MonoBehaviour:
@@ -4915,6 +4951,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7504,6 +7552,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7774,6 +7834,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8905,8 +8977,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
       propertyPath: CarAxis
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9442,6 +9526,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9826,6 +9922,7 @@ Transform:
   - {fileID: 948471758}
   - {fileID: 79327285}
   - {fileID: 1691942327}
+  - {fileID: 1562551268}
   - {fileID: 1261796446}
   - {fileID: 1458968831}
   - {fileID: 797020139}
@@ -9834,7 +9931,6 @@ Transform:
   - {fileID: 393071721}
   - {fileID: 788270929}
   - {fileID: 1113560597}
-  - {fileID: 1562551268}
   m_Father: {fileID: 1577410506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
@@ -10838,12 +10934,12 @@ Transform:
   - {fileID: 1502319814}
   - {fileID: 1959123255}
   - {fileID: 1554011882}
+  - {fileID: 1611040809}
   - {fileID: 1265933662}
   - {fileID: 781204871}
   - {fileID: 2055449911}
   - {fileID: 659916606}
   - {fileID: 1667292222}
-  - {fileID: 1611040809}
   m_Father: {fileID: 1577410506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &788270929 stripped
@@ -11011,6 +11107,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12879,17 +12987,17 @@ MonoBehaviour:
   CauntMoovs: {fileID: 1256183429}
   levels:
   - level: {fileID: 521155589}
-    moovs: 5
+    moovs: 6
   - level: {fileID: 212911283}
-    moovs: 8
+    moovs: 9
   - level: {fileID: 1714098853}
-    moovs: 10
+    moovs: 11
   - level: {fileID: 781300294}
-    moovs: 7
+    moovs: 8
   - level: {fileID: 704153922}
-    moovs: 10
+    moovs: 11
   - level: {fileID: 999981887}
-    moovs: 10
+    moovs: 11
 --- !u!1001 &981564817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13024,6 +13132,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13157,6 +13277,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.6
@@ -14213,6 +14345,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CarAxis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14778,6 +14926,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14841,8 +15001,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
       propertyPath: CarAxis
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15386,6 +15558,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.1171284
@@ -17747,7 +17931,7 @@ GameObject:
   - component: {fileID: 1386485845}
   - component: {fileID: 1386485844}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17769,7 +17953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15.799988, y: 0}
+  m_AnchoredPosition: {x: -15.799927, y: 0}
   m_SizeDelta: {x: 375.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386485844
@@ -20070,6 +20254,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.94
@@ -20895,7 +21091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 277.7, y: -0.0012207031}
+  m_AnchoredPosition: {x: 277.69995, y: -0.0014648438}
   m_SizeDelta: {x: 277.7, y: 176}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1690779221
@@ -21784,7 +21980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.34118918}
   m_AnchorMax: {x: 1, y: 0.46612167}
-  m_AnchoredPosition: {x: -0.000061035156, y: 594.8}
+  m_AnchoredPosition: {x: 0, y: 594.8001}
   m_SizeDelta: {x: 0, y: 11.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753588518
@@ -21886,7 +22082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14469445, y: 0.39265627}
   m_AnchorMax: {x: 0.8784444, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 0.00012207, y: -50.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760998950
@@ -22069,6 +22265,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CarAxis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22134,6 +22346,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23363,6 +23587,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23463,6 +23699,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.69
@@ -24987,6 +25235,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25687,6 +25947,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7284223267304032417, guid: 8473835de95a6a74db9b829d9c483018, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26007,6 +26279,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26411,8 +26695,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
       propertyPath: CarAxis
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26574,6 +26870,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CarAxis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.5681953
@@ -26708,6 +27020,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 4706011002267035649, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     - target: {fileID: 7300620035839873680, guid: d7b1d77fc253cdd428958fd06bcf0291, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.99
@@ -27824,6 +28148,18 @@ PrefabInstance:
       propertyPath: CarAxis
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoney
+      value: 
+      objectReference: {fileID: 144003048}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: CauntMoove
+      value: 
+      objectReference: {fileID: 1256183429}
+    - target: {fileID: 7641916498791298821, guid: b3452357c2c3f744595e5ad278f90851, type: 3}
+      propertyPath: StartGameBan
+      value: 
+      objectReference: {fileID: 1760998948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
